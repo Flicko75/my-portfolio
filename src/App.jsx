@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import Hero from "./sections/Hero.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (null)
+  return (
+      <>
+        <Hero />
+      </>
+  )
 }
 
 export default App
