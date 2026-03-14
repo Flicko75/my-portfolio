@@ -18,9 +18,13 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <button className="mt-6 border px-4 py-2 text-sm hover:bg-gray-100 transition-colors">
+                <a
+                    href="/resume.pdf"
+                    download
+                    className="inline-block px-6 py-2.5 bg-black text-white hover:bg-gray-800 transition-colors mt-10"
+                >
                     Download Resume
-                </button>
+                </a>
             </Container>
         </section>
     );
