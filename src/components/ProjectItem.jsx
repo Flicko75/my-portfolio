@@ -13,26 +13,26 @@ const ProjectItem = ({ project, isOpen, onToggle }) => {
             </div>
             <div onClick={onToggle} className="cursor-pointer select-none flex-1 hover:bg-surfaceHover transition-colors px-4 py-4 rounded-2xl">
                 <div className="flex justify-between text-textPrimary">
-                    <h3 className="text-xl font-medium">{project.title}</h3>
+                    <h3 className="text-2xl font-medium">{project.title}</h3>
                     <span>{isOpen ? "-" : "+"}</span>
                 </div>
 
-                <p className="text-textBody mt-3">{project.summary}</p>
+                <p className="text-textBody mt-3 text-lg">{project.summary}</p>
 
-                <p className="text-sm text-textBody mt-2 font-mono">{project.stack.join(" · ")}</p>
+                <p className="text-base text-textBody mt-2 font-mono">{project.stack.join(" · ")}</p>
 
                 <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-textBody underline mt-2 inline-block font-mono"
+                    className="text-lg text-textBody underline mt-2 inline-block font-mono"
                     onClick={(e) => e.stopPropagation()}
                 >
                     Github
                 </a>
 
                 {isOpen && (
-                    <div className="mt-6 space-y-6">
+                    <div className="mt-6 space-y-6 text-lg">
                         {project.details.map((section, index) => (
                             <div key={index}>
                                 <p className="font-medium mb-2 text-textPrimary">{section.title}</p>

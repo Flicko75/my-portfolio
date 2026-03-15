@@ -8,7 +8,7 @@ const Socials = () => {
                 <h2 className="text-3xl font-semibold tracking-tight text-textPrimary">
                     Socials
                 </h2>
-                <p className="font-medium text-textBody mt-4 font-mono">
+                <p className="font-medium text-textBody mt-4 ml-2 font-mono">
                     <a
                         href="github.com"
                         target="_blank"

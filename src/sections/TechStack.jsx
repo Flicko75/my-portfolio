@@ -9,12 +9,12 @@ const TechStack = () => {
                 Tech Stack
             </h2>
 
-            <div className="space-y-5 mt-8 text-textBody">
+            <div className="space-y-5 mt-8 text-textBody ml-2">
                 {
                     techstack.map(item => (
                         <div key={item.category}>
-                            <div className="font-semibold text-sm mb-1">{item.category}</div>
-                            <div className="text-sm font-mono">{item.technologies.join(" · ")}</div>
+                            <div className="font-semibold text-xl mb-1">{item.category}</div>
+                            <div className="text-lg font-mono">{item.technologies.join(" · ")}</div>
                         </div>
                     ))
                 }
