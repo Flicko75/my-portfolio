@@ -1,4 +1,4 @@
-const ProjectItem = ({ project, isOpen, onToggle, isLast }) => {
+const ProjectItem = ({ project, isOpen, onToggle }) => {
     return (
         <div className="flex gap-4 items-start">
             <div className="w-6 flex flex-col items-center mt-6 self-stretch">
@@ -7,10 +7,9 @@ const ProjectItem = ({ project, isOpen, onToggle, isLast }) => {
                     : "w-3 h-3 rounded-full border-2 border-gray-400"}
                 />
 
-                {!isLast && (
-                    <div className="border-l border-dashed border-gray-400 flex-1 mt-2">
-                    </div>
-                )}
+                <div className="border-l border-dashed border-gray-400 flex-1 mt-2">
+                </div>
+
             </div>
             <div onClick={onToggle} className="cursor-pointer select-none flex-1 hover:bg-gray-50 transition-colors px-4 py-4 rounded-2xl">
                 <div className="flex justify-between">

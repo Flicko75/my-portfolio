@@ -24,7 +24,6 @@ const Projects = () => {
                     {
                         projects.map((project, index) => {
                             const isOpen = activeProjectId === project.id;
-                            const isLast = index === project.length - 1;
 
                             return (
                                 <div key={project.id}>
@@ -33,7 +32,6 @@ const Projects = () => {
                                         project = {project}
                                         isOpen = {isOpen}
                                         onToggle = {() => toggleProject(project.id)}
-                                        isLast = {isLast}
                                     />
                                 </div>
                             )
