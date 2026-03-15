@@ -16,7 +16,7 @@ const Projects = () => {
     return (
         <section className="pt-0 pb-24">
             <Container>
-                <h2 className="text-3xl font-semibold tracking-tight">
+                <h2 className="text-3xl font-semibold tracking-tight text-textPrimary">
                     Projects
                 </h2>
 

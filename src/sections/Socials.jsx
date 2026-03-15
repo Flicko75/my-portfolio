@@ -5,10 +5,10 @@ const Socials = () => {
     return (
         <section className="pt-0 pb-24">
             <Container>
-                <h2 className="text-3xl font-semibold tracking-tight">
+                <h2 className="text-3xl font-semibold tracking-tight text-textPrimary">
                     Socials
                 </h2>
-                <p className="font-medium text-gray-600 mt-4 font-mono">
+                <p className="font-medium text-textBody mt-4 font-mono">
                     <a
                         href="github.com"
                         target="_blank"

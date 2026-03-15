@@ -3,29 +3,29 @@ const ProjectItem = ({ project, isOpen, onToggle }) => {
         <div className="flex gap-4 items-start">
             <div className="w-6 flex flex-col items-center mt-6 self-stretch">
                 <div className={isOpen
-                    ? "w-3 h-3 rounded-full bg-black"
-                    : "w-3 h-3 rounded-full border-2 border-gray-400"}
+                    ? "w-3 h-3 rounded-full bg-textPrimary"
+                    : "w-3 h-3 rounded-full border-2 border-borderSubtle"}
                 />
 
-                <div className="border-l border-dashed border-gray-400 flex-1 mt-2">
+                <div className="border-l border-dashed border-borderSubtle flex-1 mt-2">
                 </div>
 
             </div>
-            <div onClick={onToggle} className="cursor-pointer select-none flex-1 hover:bg-gray-50 transition-colors px-4 py-4 rounded-2xl">
-                <div className="flex justify-between">
+            <div onClick={onToggle} className="cursor-pointer select-none flex-1 hover:bg-surfaceHover transition-colors px-4 py-4 rounded-2xl">
+                <div className="flex justify-between text-textPrimary">
                     <h3 className="text-xl font-medium">{project.title}</h3>
                     <span>{isOpen ? "-" : "+"}</span>
                 </div>
 
-                <p className="text-gray-700 mt-3">{project.summary}</p>
+                <p className="text-textBody mt-3">{project.summary}</p>
 
-                <p className="text-sm text-gray-600 mt-2 font-mono">{project.stack.join(" · ")}</p>
+                <p className="text-sm text-textBody mt-2 font-mono">{project.stack.join(" · ")}</p>
 
                 <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-gray-700 underline mt-2 inline-block font-mono"
+                    className="text-sm text-textBody underline mt-2 inline-block font-mono"
                     onClick={(e) => e.stopPropagation()}
                 >
                     Github
@@ -35,11 +35,11 @@ const ProjectItem = ({ project, isOpen, onToggle }) => {
                     <div className="mt-6 space-y-6">
                         {project.details.map((section, index) => (
                             <div key={index}>
-                                <p className="font-medium mb-2">{section.title}</p>
+                                <p className="font-medium mb-2 text-textPrimary">{section.title}</p>
 
                                 <ul className="list-disc pl-5 space-y-2">
                                     {section.items.map((item, index) => (
-                                        <li key={index} className="text-gray-700">{item}</li>
+                                        <li key={index} className="text-textBody">{item}</li>
                                     ))}
                                 </ul>
                             </div>
