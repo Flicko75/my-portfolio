@@ -4,7 +4,8 @@ export const techstack = [
         technologies: [
             "Java",
             "Spring Boot",
-            "MySQL / PostgreSQL"
+            "MySQL",
+            "PostgreSQL"
         ]
     },
     {
