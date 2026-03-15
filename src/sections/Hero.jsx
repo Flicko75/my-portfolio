@@ -7,7 +7,7 @@ const Hero = () => {
                 <div className="space-y-3">
                     <h1 className="text-5xl font-bold tracking-tight">Sayan Sarkar</h1>
 
-                    <div className="max-w-xl">
+                    <div className="max-w-2xl">
                         <p className="mt-3 text-lg text-gray-700">
                             Backend-focused developer building scalable systems and developer tools.
                         </p>
