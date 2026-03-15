@@ -20,7 +20,7 @@ const Hero = () => {
 
                 <a
                     href="/resume.pdf"
-                    download
+                    download="resume.pdf"
                     className="inline-block px-6 py-2.5 bg-textPrimary text-white hover:bg-textBody transition-colors mt-12 ml-2"
                 >
                     Download Resume
