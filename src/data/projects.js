@@ -4,7 +4,7 @@ export const projects = [
         title : "Task Management System",
         summary : "Task management system supporting role-based access control for secure multi-user collaboration.",
         stack: ["Java", "Spring Boot", "PostgreSQL"],
-        github : "abc.com",
+        github : "https://github.com/Flicko75/taskman",
         details: [
             {
                 title : "Problem",
@@ -46,7 +46,7 @@ export const projects = [
         title : "Link Shortener Website",
         summary : "Link Shortening Website with user account and analytics.",
         stack: ["Java", "Spring Boot", "PostgreSQL"],
-        github : "abc.com",
+        github : "https://github.com/Flicko75/link-nest",
         details: [
             {
                 title : "Problem",

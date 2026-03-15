@@ -10,7 +10,7 @@ const Socials = () => {
                 </h2>
                 <p className="font-medium text-textBody mt-4 ml-2 font-mono">
                     <a
-                        href="github.com"
+                        href="https://github.com/Flicko75"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-black transition-colors"
@@ -18,7 +18,7 @@ const Socials = () => {
                     <span className="mx-2">·</span>
 
                     <a
-                        href="linkedin.com"
+                        href="https://www.linkedin.com/in/sayan90"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-black transition-colors"
@@ -26,7 +26,7 @@ const Socials = () => {
                     <span className="mx-2">·</span>
 
                     <a
-                        href="mailto:email@com"
+                        href="mailto:sarkarsayan749@gmail.com"
                         className="hover:text-black transition-colors"
                     >Email</a>
                 </p>
