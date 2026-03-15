@@ -19,13 +19,13 @@ const ProjectItem = ({ project, isOpen, onToggle }) => {
 
                 <p className="text-gray-700 mt-3">{project.summary}</p>
 
-                <p className="text-sm text-gray-600 mt-2">{project.stack.join(" · ")}</p>
+                <p className="text-sm text-gray-600 mt-2 font-mono">{project.stack.join(" · ")}</p>
 
                 <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-gray-700 underline mt-2 inline-block"
+                    className="text-sm text-gray-700 underline mt-2 inline-block font-mono"
                     onClick={(e) => e.stopPropagation()}
                 >
                     Github
@@ -35,11 +35,11 @@ const ProjectItem = ({ project, isOpen, onToggle }) => {
                     <div className="mt-6 space-y-6">
                         {project.details.map((section, index) => (
                             <div key={index}>
-                                <p className="font-medium">{section.title}</p>
+                                <p className="font-medium mb-2">{section.title}</p>
 
-                                <ul>
+                                <ul className="list-disc pl-5 space-y-2">
                                     {section.items.map((item, index) => (
-                                        <li key={index} className="text-gray-700">• {item}</li>
+                                        <li key={index} className="text-gray-700">{item}</li>
                                     ))}
                                 </ul>
                             </div>

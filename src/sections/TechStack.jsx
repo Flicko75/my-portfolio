@@ -14,7 +14,7 @@ const TechStack = () => {
                     techstack.map(item => (
                         <div key={item.category}>
                             <div className="font-semibold text-sm text-gray-700 mb-1">{item.category}</div>
-                            <div className="text-sm text-gray-600">{item.technologies.join(" · ")}</div>
+                            <div className="text-sm text-gray-600 font-mono">{item.technologies.join(" · ")}</div>
                         </div>
                     ))
                 }
