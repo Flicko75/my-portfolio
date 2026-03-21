@@ -19,16 +19,17 @@ export const projects = [
                 title : "Approach",
                 items: [
                     "Designed a REST-based backend using Spring Boot.",
-                    "Separated authentication, business logic, and persistence using layered architecture."
+                    "Separated authentication, business logic, and persistence using layered architecture.",
+                    "Designed APIs using DTOs to avoid exposing database entities."
                 ]
             },
             {
                 title : "Architecture",
                 items: [
                     "Spring Boot REST API handles task lifecycle operations.",
+                    "JWT-based stateless authentication using Spring Security.",
                     "Role-based access control enforced using Spring Security.",
                     "PostgreSQL stores tasks, users, and role mappings.",
-                    "Service layer separates business logic from controller endpoints.",
                     "Dockerized the application for easier deployment and environment consistency"
                 ]
             },
@@ -36,9 +37,19 @@ export const projects = [
                 title: "Engineering Decisions",
                 items: [
                     "Used PostgreSQL for strong relational consistency between users and tasks.",
-                    "Chose Spring Security for RBAC instead of a custom authorization system."
+                    "Used JWT with token versioning to support secure logout and session invalidation.",
+                    "Implemented soft deletion for users to preserve historical references.",
+                    "Enforced business rules (team-based task assignment, role restrictions) at service layer instead of controllers.",
+                    "Used Flyway for version-controlled database migrations."
                 ]
-            }
+            },
+            {
+                title: "Testing",
+                items: [
+                    "Wrote 150+ unit tests covering service layer logic and edge cases.",
+                    "Added integration tests for full request lifecycle."
+                ]
+            },
         ]
     },
     {
