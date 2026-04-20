@@ -5,7 +5,9 @@ export const techstack = [
             "Java",
             "Spring Boot",
             "MySQL",
-            "PostgreSQL"
+            "PostgreSQL",
+            "Apache Kafka",
+            "Redis"
         ]
     },
     {
@@ -20,7 +22,8 @@ export const techstack = [
         category: "TOOLS",
         technologies: [
             "Git",
-            "Docker"
+            "Docker",
+            "GitHub Actions"
         ]
     }
 ]
